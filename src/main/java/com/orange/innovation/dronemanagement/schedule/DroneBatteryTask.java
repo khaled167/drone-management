@@ -22,10 +22,11 @@ public class DroneBatteryTask {
         this.droneService = droneService;
     }
 
-
     @Scheduled(fixedRate = 1000)
     public void reportCurrentTime() {
-        List<String> dronesBatteries = droneService.getAllDrones().stream().map(drone -> drone.getId() + " " + drone.getBatteryPercentage()).toList();
-        kafkaTemplate.send("firstTopic", dateFormat.format(new Date()) + " " + dronesBatteries);
+        List<String> dronesBatteries = droneService.getAllDrones().stream().map(drone -> "Drone ID: "+drone.getId() + ", Drone Battery Health: " + drone.getBatteryPercentage()).toList();
+        String message;
+        log.info((message = dateFormat.format(new Date()) + " -> " + dronesBatteries));
+        kafkaTemplate.send("droneBatteryLoggingTopic", message);
     }
 }

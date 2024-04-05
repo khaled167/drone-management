@@ -12,7 +12,7 @@ import lombok.Setter;
 public class Medication {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(unique = true)
@@ -26,6 +26,6 @@ public class Medication {
     @Pattern(regexp = "[A-Z0-9_]*")
     private String code;
 
-    @Column
+    @Column(name = "IMAGE_URL")
     private String imageURL;
 }

@@ -50,4 +50,8 @@ public class DroneController {
     public ResponseEntity<DroneMedicationCarry> endDroneJourney(@PathVariable Long id) throws Exception {
         return ResponseEntity.ok(droneService.endDroneJourney(id));
     }
+    @GetMapping("{id}/battery")
+    public ResponseEntity<String> droneBattery(@PathVariable Long id) {
+        return ResponseEntity.ok(droneService.droneBattery(id));
+    }
 }

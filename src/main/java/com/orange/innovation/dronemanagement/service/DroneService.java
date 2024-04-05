@@ -84,4 +84,7 @@ public class DroneService {
     public DroneMedicationCarry endDroneJourney(Long id) throws Exception {
         return droneMedicationCarryRepository.save(droneMedicationCarryRepository.findByDroneIdAndEndDate(id, null).orElseThrow(() -> new Exception("Drone has no current journeys")).setEndDate(new Date()));
     }
+    public String droneBattery(Long id) {
+        return droneRepository.findById(id).orElseThrow().getBatteryPercentage()+"";
+    }
 }
