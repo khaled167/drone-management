@@ -31,7 +31,7 @@ running multi-container application as per we are using Postgres and Kafka.
 
 ## 📋 Requirements
 
-* 📋 Java 17+
+* ☕ Java 17+
 * 🐳 Docker 23.0.0+
 * <span style="color:lightblue">_M_</span> Maven 3.9.5
 
