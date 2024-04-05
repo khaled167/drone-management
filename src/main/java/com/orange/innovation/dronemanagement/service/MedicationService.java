@@ -25,10 +25,12 @@ public class MedicationService {
     public Medication insertMedication(MedicationDto medicationDto) {
         return medicationRepository.save(medicationMapper.toEntity(medicationDto));
     }
+
     public List<Medication> getAllMedics() {
         return medicationRepository.findAll();
     }
-    public Medication getMedication(Long id){
+
+    public Medication getMedication(Long id) {
         return medicationRepository.findById(id).orElseThrow();
     }
 

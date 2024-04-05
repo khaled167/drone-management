@@ -12,12 +12,6 @@ public class KafkaTopicConfig {
 
     @Bean
     public NewTopic firstTopic() {
-        return TopicBuilder.name("firstTopic").build();
+        return TopicBuilder.name("DroneBatteryLoggingTopic").build();
     }
-
-    @Bean
-    public NewTopic secondTopic() {
-        return TopicBuilder.name("secondTopic").build();
-    }
-
 }

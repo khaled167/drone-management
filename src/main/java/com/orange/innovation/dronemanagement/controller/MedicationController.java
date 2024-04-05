@@ -23,6 +23,7 @@ public class MedicationController {
     public ResponseEntity<Medication> addMedication(@RequestBody MedicationDto medicationDto) {
         return ResponseEntity.ok(medicationService.insertMedication(medicationDto));
     }
+
     @GetMapping
     public ResponseEntity<List<Medication>> getMedications() {
         return ResponseEntity.ok(medicationService.getAllMedics());

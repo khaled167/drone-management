@@ -1,6 +1,5 @@
 package com.orange.innovation.dronemanagement.model.dto;
 
-import jakarta.validation.constraints.Pattern;
 import lombok.Value;
 
 import java.io.Serializable;
