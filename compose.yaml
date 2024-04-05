@@ -8,6 +8,13 @@ services:
       POSTGRES_USERNAME: postgres
       POSTGRES_PASSWORD: ken123
       POSTGRES_DB: blog
+  kafka:
+    image: apache/kafka
+    restart: always
+    ports:
+      - "9092:9092"
 networks:
   postgres-network:
+    driver: bridge
+  kafka-network:
     driver: bridge
