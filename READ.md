@@ -37,7 +37,7 @@ running multi-container application as per we are using Postgres and Kafka.
 
 ## Instructions to build the project
 
-### Docker installation is a must, so please refer to [Docker Instruction Guide](Docker-Instructions.md) if not.
+### Docker installation is a must, so please refer to [Docker Instruction Guide](documentations/Docker-Instructions.md) if not.
 
 Just as simple as
 
@@ -52,7 +52,7 @@ As mentioned above Database type used is SQL below is a simple ER-Diagram
 Our Two main entities are Drone and Medication with Many-To-Many relationship composed to two One-To-Many relationships
 with a DroneMedicationCarry composer.
 
-![img.png](img.png)
+![img.png](documentations/img.png)
 
 ### DroneMedicationCarry has some merging fields that are below:
 
@@ -61,4 +61,4 @@ with a DroneMedicationCarry composer.
 * Start Date (The time the Drone changed its state to be Delivering)
 * End Date (The time the Drone changed its state to be Delivered)
 
-# [API Documentation](API-Documentation.md)
+# [API Documentation](documentations/API-Documentation.md)

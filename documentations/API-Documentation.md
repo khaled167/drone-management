@@ -1,4 +1,4 @@
-### [Drone Http Requests](src/main/resources/drone-requests.http)
+### [Drone Http Requests](../src/main/resources/drone-requests.http)
 
 Register a Drone
 
@@ -195,7 +195,7 @@ Connection: keep-alive
 ]
 ```
 
-### [Medication Http Requests](src/main/resources/medication-requests.http)
+### [Medication Http Requests](../src/main/resources/medication-requests.http)
 
 Add medication to Database
 
