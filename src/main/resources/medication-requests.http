@@ -3,7 +3,7 @@ POST http://127.0.0.1:8080/medication/v1
 Content-Type: application/json
 
 {
-  "name": "Paracetamol",
+  "name": "Paracsetamol",
   "weight": 100,
   "code": "ABC123",
   "imageURL": "https://example.com/image1.jpg"

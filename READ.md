@@ -3,7 +3,7 @@
 Purpose of this microservice is to handle drone basic actions and features such carrying small weights like medicines
 from a point to another.
 
-### *This microservice uses 4 basic technologies to meet the requirements*
+### *This microservice uses 5 basic technologies to meet the requirements*
 
 # ⚡ Backend
 
@@ -36,9 +36,29 @@ running multi-container application as per we are using Postgres and Kafka.
 * <span style="color:lightblue">_M_</span> Maven 3.9.5
 
 ## Instructions to build the project
+
 ### Docker installation is a must, so please refer to [Docker Instruction Guide](Docker-Instructions.md) if not.
+
 Just as simple as
+
 ```shell
 ./mvnw spring-boot:run
 ```
 
+## Database Relationships
+
+As mentioned above Database type used is SQL below is a simple ER-Diagram
+
+Our Two main entities are Drone and Medication with Many-To-Many relationship composed to two One-To-Many relationships
+with a DroneMedicationCarry composer.
+
+![img.png](img.png)
+
+### DroneMedicationCarry has some merging fields that are below:
+
+* Pickup Location (The Location where the drone change its state to be Delivering)
+* Destination Location (The Location where the drone change its state to be Delivered)
+* Start Date (The time the Drone changed its state to be Delivering)
+* End Date (The time the Drone changed its state to be Delivered)
+
+# [API Documentation](API-Documentation.md)

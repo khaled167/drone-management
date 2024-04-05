@@ -3,7 +3,7 @@ POST http://127.0.0.1:8080/drone/v1
 Content-Type: application/json
 
 {
-  "serialNumber": "drone123",
+  "serialNumber": "drosne123",
   "model": "LIGHTWEIGHT",
   "weightLimit": 450,
   "batteryPercentage": 80,
@@ -123,6 +123,9 @@ GET http://127.0.0.1:8080/drone/v1
 
 ###
 GET http://127.0.0.1:8080/drone/v1/1/medications
+
+###
+GET http://localhost:8080/drone/v1/available
 
 ###
 POST http://127.0.0.1:8080/drone/v1/1
