@@ -1,0 +1,11 @@
+-- INSERT INTO DRONE (serial_number, model, weight_limit, battery_percentage, state) VALUES ('drone123', 'LIGHTWEIGHT', 250, 80, 'IDLE');
+INSERT INTO DRONE (serial_number, model, weight_limit, battery_percentage, state) VALUES ('drone456', 1, 400, 90, 1);
+-- INSERT INTO DRONE (serial_number, model, weight_limit, battery_percentage, state) VALUES ('drone789', 'CRUISERWEIGHT', 150, 70, 'LOADED');
+-- INSERT INTO DRONE (serial_number, model, weight_limit, battery_percentage, state) VALUES ('drone101112', 'HEAVYWEIGHT', 350, 60, 'DELIVERING');
+-- INSERT INTO DRONE (serial_number, model, weight_limit, battery_percentage, state) VALUES ('drone131415', 'LIGHTWEIGHT', 200, 85, 'DELIVERED');
+-- INSERT INTO DRONE (serial_number, model, weight_limit, battery_percentage, state) VALUES ('drone161718', 'MIDDLEWEIGHT', 450, 75, 'RETURNING');
+-- INSERT INTO DRONE (serial_number, model, weight_limit, battery_percentage, state) VALUES ('drone192021', 'CRUISERWEIGHT', 300, 95, 'IDLE');
+-- INSERT INTO DRONE (serial_number, model, weight_limit, battery_percentage, state) VALUES ('drone222324', 'HEAVYWEIGHT', 100, 50, 'LOADING');
+-- INSERT INTO DRONE (serial_number, model, weight_limit, battery_percentage, state) VALUES ('drone252627', 'LIGHTWEIGHT', 400, 65, 'LOADED');
+-- INSERT INTO DRONE (serial_number, model, weight_limit, battery_percentage, state) VALUES ('drone282930', 'MIDDLEWEIGHT', 200, 80, 'DELIVERING');
+commit;

@@ -1,0 +1,131 @@
+###
+POST http://127.0.0.1:8080/drone/v1
+Content-Type: application/json
+
+{
+  "serialNumber": "drone123",
+  "model": "LIGHTWEIGHT",
+  "weightLimit": 450,
+  "batteryPercentage": 80,
+  "state": "IDLE"
+}
+
+###
+POST http://127.0.0.1:8080/drone/v1
+Content-Type: application/json
+
+{
+  "serialNumber": "drone456",
+  "model": "MIDDLEWEIGHT",
+  "weightLimit": 400,
+  "batteryPercentage": 90,
+  "state": "LOADING"
+}
+
+###
+POST http://127.0.0.1:8080/drone/v1
+Content-Type: application/json
+
+{
+  "serialNumber": "drone789",
+  "model": "CRUISERWEIGHT",
+  "weightLimit": 150,
+  "batteryPercentage": 70,
+  "state": "LOADED"
+}
+
+###
+POST http://127.0.0.1:8080/drone/v1
+Content-Type: application/json
+
+{
+  "serialNumber": "drone101112",
+  "model": "HEAVYWEIGHT",
+  "weightLimit": 350,
+  "batteryPercentage": 60,
+  "state": "DELIVERING"
+}
+
+###
+POST http://127.0.0.1:8080/drone/v1
+Content-Type: application/json
+
+{
+  "serialNumber": "drone131415",
+  "model": "LIGHTWEIGHT",
+  "weightLimit": 200,
+  "batteryPercentage": 85,
+  "state": "DELIVERED"
+}
+
+###
+POST http://127.0.0.1:8080/drone/v1
+Content-Type: application/json
+
+{
+  "serialNumber": "drone161718",
+  "model": "MIDDLEWEIGHT",
+  "weightLimit": 450,
+  "batteryPercentage": 75,
+  "state": "RETURNING"
+}
+
+###
+POST http://127.0.0.1:8080/drone/v1
+Content-Type: application/json
+
+{
+  "serialNumber": "drone192021",
+  "model": "CRUISERWEIGHT",
+  "weightLimit": 300,
+  "batteryPercentage": 95,
+  "state": "IDLE"
+}
+
+###
+POST http://127.0.0.1:8080/drone/v1
+Content-Type: application/json
+
+{
+  "serialNumber": "drone222324",
+  "model": "HEAVYWEIGHT",
+  "weightLimit": 100,
+  "batteryPercentage": 50,
+  "state": "LOADING"
+}
+
+###
+POST http://127.0.0.1:8080/drone/v1
+Content-Type: application/json
+
+{
+  "serialNumber": "drone252627",
+  "model": "LIGHTWEIGHT",
+  "weightLimit": 400,
+  "batteryPercentage": 65,
+  "state": "LOADED"
+}
+
+###
+POST http://127.0.0.1:8080/drone/v1
+Content-Type: application/json
+
+{
+  "serialNumber": "drone282930",
+  "model": "MIDDLEWEIGHT",
+  "weightLimit": 200,
+  "batteryPercentage": 80,
+  "state": "DELIVERING"
+}
+
+###
+GET http://127.0.0.1:8080/drone/v1
+
+###
+GET http://127.0.0.1:8080/drone/v1/1/medications
+
+###
+POST http://127.0.0.1:8080/drone/v1/1
+Content-Type: application/json
+
+[1, 2, 3]

@@ -1,0 +1,112 @@
+###
+POST http://127.0.0.1:8080/medication/v1
+Content-Type: application/json
+
+{
+  "name": "Paracetamol",
+  "weight": 100,
+  "code": "ABC123",
+  "imageURL": "https://example.com/image1.jpg"
+}
+
+###
+POST http://127.0.0.1:8080/medication/v1
+Content-Type: application/json
+
+{
+  "name": "Aspirin",
+  "weight": 200,
+  "code": "DEF456",
+  "imageURL": "https://example.com/image2.jpg"
+}
+
+###
+POST http://127.0.0.1:8080/medication/v1
+Content-Type: application/json
+
+{
+  "name": "Ibuprofen",
+  "weight": 150,
+  "code": "GHI789",
+  "imageURL": "https://example.com/image3.jpg"
+}
+
+###
+POST http://127.0.0.1:8080/medication/v1
+Content-Type: application/json
+
+{
+  "name": "Amoxicillin",
+  "weight": 300,
+  "code": "JKL012",
+  "imageURL": "https://example.com/image4.jpg"
+}
+
+###
+POST http://127.0.0.1:8080/medication/v1
+Content-Type: application/json
+
+{
+  "name": "Lisinopril",
+  "weight": 250,
+  "code": "MNO345",
+  "imageURL": "https://example.com/image5.jpg"
+}
+
+###
+POST http://127.0.0.1:8080/medication/v1
+Content-Type: application/json
+
+{
+  "name": "Atorvastatin",
+  "weight": 350,
+  "code": "PQR678",
+  "imageURL": "https://example.com/image6.jpg"
+}
+
+###
+POST http://127.0.0.1:8080/medication/v1
+Content-Type: application/json
+
+{
+  "name": "Metformin",
+  "weight": 400,
+  "code": "STU901",
+  "imageURL": "https://example.com/image7.jpg"
+}
+
+###
+POST http://127.0.0.1:8080/medication/v1
+Content-Type: application/json
+
+{
+  "name": "Levothyroxine",
+  "weight": 200,
+  "code": "VWX234",
+  "imageURL": "https://example.com/image8.jpg"
+}
+
+###
+POST http://127.0.0.1:8080/medication/v1
+Content-Type: application/json
+
+{
+  "name": "Simvastatin",
+  "weight": 250,
+  "code": "YZA567",
+  "imageURL": "https://example.com/image9.jpg"
+}
+
+###
+POST http://127.0.0.1:8080/medication/v1
+Content-Type: application/json
+
+{
+  "name": "Losartan",
+  "weight": 300,
+  "code": "BCD890",
+  "imageURL": "https://example.com/image10.jpg"
+}
+
+###
+GET http://127.0.0.1:8080/medication/v1
